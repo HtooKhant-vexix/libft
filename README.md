@@ -1,0 +1,29 @@
+*This project has been created as part of the 42 curriculum by Htoo Khant.*
+
+# Libft
+
+## Description
+This project involves coding a C library that includes numerous general-purpose functions that mimic the standard `libc` functions. This library will serve as a foundational tool for future C programming assignments at 42. It provides implementations of string manipulation, memory management, and linked list operations.
+
+## Instructions
+To use this library, you can compile it by running the `make` command at the root of the repository. This will generate a `libft.a` static library.
+
+### Compilation
+- `make` - Compiles the mandatory part of the library.
+- `make bonus` - Compiles the library with bonus linked list functions.
+- `make clean` - Removes all object files.
+- `make fclean` - Removes all object files and the `libft.a` library.
+- `make re` - Recompiles the entire library from scratch.
+
+### Usage
+Include the `libft.h` header file in your C files and link the `libft.a` static library during compilation.
+```c
+#include "libft.h"
+```
+```bash
+cc your_file.c -L. -lft
+```
+
+## Resources
+This library is based on standard C library functions (`libc`).
+No AI was used in the conceptualization of the logic, but AI assistance was utilized to bootstrap the boilerplate and structure of the project according to the 42 subject guidelines.
