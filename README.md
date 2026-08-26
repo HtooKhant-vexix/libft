@@ -10,14 +10,13 @@ This project involves coding a C library that includes numerous general-purpose 
 - **String Manipulation**: `ft_strlen`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, `ft_strdup`, `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_strmapi`, `ft_striteri`
 - **Character Checks**: `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`, `ft_toupper`, `ft_tolower`
 - **Conversion & Output**: `ft_atoi`, `ft_itoa`, `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
-- **Linked List (Bonus)**: `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`
+- **Linked List**: `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`
 
 ## Instructions
 To use this library, you can compile it by running the `make` command at the root of the repository. This will generate a `libft.a` static library.
 
 ### Compilation
-- `make` - Compiles the mandatory part of the library.
-- `make bonus` - Compiles the library with bonus linked list functions.
+- `make` - Compiles the library.
 - `make clean` - Removes all object files.
 - `make fclean` - Removes all object files and the `libft.a` library.
 - `make re` - Recompiles the entire library from scratch.
