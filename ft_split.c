@@ -39,19 +39,11 @@ static void	free_arr(char **arr, size_t len)
 	free(arr);
 }
 
-char	**ft_split(char const *s, char c)
+static int	fill_arr(char **arr, char const *s, char c, size_t words)
 {
-	char	**arr;
-	size_t	words;
 	size_t	i;
 	size_t	j;
 
-	if (!s)
-		return (NULL);
-	words = count_words(s, c);
-	arr = (char **)malloc((words + 1) * sizeof(char *));
-	if (!arr)
-		return (NULL);
 	i = 0;
 	j = 0;
 	while (j < words)
@@ -62,10 +54,26 @@ char	**ft_split(char const *s, char c)
 		if (!arr[j])
 		{
 			free_arr(arr, j);
-			return (NULL);
+			return (0);
 		}
 		j++;
 	}
 	arr[j] = NULL;
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**arr;
+	size_t	words;
+
+	if (!s)
+		return (NULL);
+	words = count_words(s, c);
+	arr = (char **)malloc((words + 1) * sizeof(char *));
+	if (!arr)
+		return (NULL);
+	if (!fill_arr(arr, s, c, words))
+		return (NULL);
 	return (arr);
 }
