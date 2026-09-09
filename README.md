@@ -32,4 +32,4 @@ cc your_file.c -L. -lft
 
 ## Resources
 This library is based on standard C library functions (`libc`).
-No AI was used in the conceptualization of the logic, but AI assistance was utilized to bootstrap the boilerplate and structure of the project according to the 42 subject guidelines.
+For this project, AI (Antigravity IDE Assistant) was used to help diagnose build configuration issues, correct prototype mismatches against the subject guidelines, and automatically align syntax to meet norminette style standards.
